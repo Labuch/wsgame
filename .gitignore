@@ -1,0 +1,18 @@
+# Dépendances et constructions
+node_modules/
+dist/
+dist-deploy/
+coverage/
+*.tsbuildinfo
+
+# Réglages locaux, avec secrets : jamais versionnés. deploy/.env, lui, ne
+# contient que l'identité de déploiement (sous-domaine, port) et l'est.
+.env
+.env.*
+!.env.example
+!deploy/.env
+
+# Système et éditeurs
+.DS_Store
+.idea/
+*.log
